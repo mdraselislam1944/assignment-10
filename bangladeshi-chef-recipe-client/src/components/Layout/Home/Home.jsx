@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars*/ 
 import React from 'react';
+import Bannar from './Bannar/Bannar';
 
 const Home = () => {
 
     return (
         <div>
-            <h1>This is home part</h1>
+           <Bannar></Bannar>
         </div>
     );
 };

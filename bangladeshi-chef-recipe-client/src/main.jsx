@@ -13,6 +13,7 @@ import Error_page from './Error_page';
 import LogIn from './components/LogIn/LogIn';
 import Registration from './components/Registration/Registration';
 import AuthProviders from './components/AuthProviders/AuthProviders';
+import Blocks from './components/Blocks/Blocks';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:"registration",
         element:<Registration></Registration>
+      },
+      {
+        path:'/block',
+        element:<Blocks></Blocks>
       }
       
     ]},
