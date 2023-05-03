@@ -14,6 +14,7 @@ import LogIn from './components/LogIn/LogIn';
 import Registration from './components/Registration/Registration';
 import AuthProviders from './components/AuthProviders/AuthProviders';
 import Blocks from './components/Blocks/Blocks';
+import ChefRecipes from './ChefRecipes/ChefRecipes';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +38,12 @@ const router = createBrowserRouter([
       {
         path:'/block',
         element:<Blocks></Blocks>
+      },
+      {
+        path:'/chefRecipe/:id',
+        element:<ChefRecipes></ChefRecipes>,
+        loader:({params})=>fetch(`http://localhost:5000/chefRecipes/${params.id}`)
       }
-      
     ]},
 ]);
 

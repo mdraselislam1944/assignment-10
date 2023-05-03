@@ -1,22 +1,31 @@
 /* eslint-disable no-unused-vars*/ 
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import {
+    FaCheck,
+    FaHandPointRight,
+  } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const ChefCard = (prob) => {
-    const {ChefPicture,ChefName,YearsOfExperience,NumbersOfRecipes,Likes}=prob.chefRecipe;
-    console.log(ChefPicture);
+    const {ChefPicture,ChefName,YearsOfExperience,NumbersOfRecipes,Likes,ViewRecipesButton,_id}=prob.chefRecipe;
     return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={ChefPicture}/>
+      <div className='col-4 my-2'>
+        <Card style={{ width: '26rem'}}>
+        <Card.Img style={{ width: '26rem',height:'20rem' }} variant="top" src={ChefPicture}/>
         <Card.Body>
           <Card.Title>{ChefName}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
+            <p>{YearsOfExperience}</p>
+            <div className="d-flex justify-content-between align-items-center">
+                <p>Total recipes: {NumbersOfRecipes}</p>
+                <p><FaHandPointRight></FaHandPointRight> {Likes}</p>
+            </div>
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Link to={`/chefRecipe/${_id}`}><Button variant="primary">{ViewRecipesButton}</Button></Link>
         </Card.Body>
       </Card>
+      </div>
     );
 };
 

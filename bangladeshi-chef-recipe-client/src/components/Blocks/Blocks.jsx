@@ -9,7 +9,6 @@ import {
   FaHandPointRight,
   FaQuora,
   FaRocketchat,
-  FaFacebook,
 } from "react-icons/fa";
 
 const Blocks = () => {

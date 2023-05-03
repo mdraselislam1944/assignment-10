@@ -7,9 +7,9 @@ import ChefCard from '../../ChefCard/ChefCard';
 const Home = () => {
     const chefRecipes=useLoaderData();
     return (
-        <div>
+        <div className='container'>
            <Bannar></Bannar>
-           <div className='d-flex '>
+           <div className='row'>
            {
             chefRecipes.map(chefRecipe=><ChefCard
             key={chefRecipe._id} chefRecipe={chefRecipe}
