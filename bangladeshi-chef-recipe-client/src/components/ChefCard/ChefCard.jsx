@@ -9,6 +9,9 @@ import { Link } from 'react-router-dom';
 
 const ChefCard = (prob) => {
     const {ChefPicture,ChefName,YearsOfExperience,NumbersOfRecipes,Likes,ViewRecipesButton,_id}=prob.chefRecipe;
+    // for(let i of prob.chefRecipe.Recipes){
+    //   console.log(typeof(i));
+    // }
     return (
       <div className='col-4 my-2'>
         <Card style={{ width: '26rem'}}>
