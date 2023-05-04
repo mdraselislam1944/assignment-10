@@ -32,9 +32,9 @@ const Home = () => {
            <div className='row'>
            {
     favoriteRecipe?
-    favoriteRecipe.map(favoriteRecipe=><div key={favoriteRecipe.recipeName} className='col-4'>
-      < Card className='col-4 container my-3 py-5 mx-2' style={{ width: '26rem',height:'44rem' }}>
-      <Card.Img style={{ width: '24rem',height:'20rem' }} variant="top" src={favoriteRecipe?.image}/>
+    favoriteRecipe.map(favoriteRecipe=><div key={favoriteRecipe.recipeName} className='col-12 col-sm-4'>
+      < Card className='col-12 col-sm-4 container my-3 py-5 mx-2' style={{ width: '100vw',height:'44rem' }}>
+      <Card.Img style={{ width: '100vw',height:'20rem' }} variant="top" src={favoriteRecipe?.image}/>
       <Card.Body>
         <Card.Title>{favoriteRecipe?.recipeName}</Card.Title>
         <Card.Text>
@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
       <h1 className='text-center mt-5 mb-3 '>Our Provided service in the Bangladesh</h1>
-      <div className='d-flex my-5'>
+      <div className='d-flex flex-column flex-md-row my-5'>
       <div className='my-auto mx-5'>
       <ul>
      <h3>
@@ -62,12 +62,14 @@ const Home = () => {
               Variety: Recipe services offer a vast collection of recipes from different cuisines and cultures, so you can explore new flavors and ingredients that you may not have tried before. You can also filter recipes by dietary preferences or restrictions, ensuring that you find recipes that fit your lifestyle and preferences.
               </li>
               <li>User-generated content: Many recipe services allow users to rate and review recipes, providing valuable insights and feedback about the recipes taste, difficulty level, and overall appeal. User-generated content can help you choose the best recipes to try and avoid recipes that may not be as successful.</li>
+              <li>User-generated content: Many recipe services allow users to rate and review recipes, providing valuable insights and feedback about the recipes taste, difficulty level, and overall appeal. User-generated content can help you choose the best recipes to try and avoid recipes that may not be as successful.</li>
             </ul>
       </div> 
     <div >
-       <img className='rounded'  style={{ width: '36rem',height:'40rem' }} src={image} alt="" /> 
+       <img className='rounded w-100'  src={image} alt="" /> 
     </div> 
       </div>
+
       </div>
     );
 };

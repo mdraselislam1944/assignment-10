@@ -7,7 +7,7 @@ import { FaFacebook, FaGlassMartiniAlt, FaInstagram, FaTwitch,  } from "react-ic
 const Footer = () => {
   return (
     <div className="bg-black py-5 text-white">
-    <div className="d-flex justify-content-between align-items-center container py-5">
+    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center container py-5">
         <div>
             <h1>Food Lover</h1>
             <p>Food Lover is an online food and grocery the recipes of all available chefs. platform owned by Berlin-based the recipes of all available chefs. Hero. Food Lover operates as the lead brand for Delivery Hero in Bangladesh, with its headquarters in Dhaka.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex flex-column flex-md-row">
         <div className="mx-3">
             <h3>Company</h3>
             <ul>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
     </div>
       <hr />
-      <div className="d-flex justify-content-between align-items-center container">
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center container">
         <div>
           <p>@2023 software job solutions All Rights Reserved</p>
         </div>

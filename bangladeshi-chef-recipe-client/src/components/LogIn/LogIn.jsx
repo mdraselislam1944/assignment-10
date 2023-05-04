@@ -43,9 +43,9 @@ const LogIn = () => {
     return (
         <div className='text-center my-5'>
             <h3>Please Login</h3>
-            <div className='d-flex justify-content-between align-items-center container py-5'>
+            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center container py-5'>
                 <div>
-                    <h3>Please login with email and password</h3>
+                    <h3>login with email and password</h3>
                 <form onSubmit={handleLogin}>
                 <input className='py-2 px-5' type="email" name="email" id="name" required placeholder='Enter your Email'/><br/>
                 <input className='py-2 px-5 my-2' type="password" name="password" id="password" required placeholder='Enter Password'/><br/>
@@ -53,11 +53,15 @@ const LogIn = () => {
                </form>
                 </div>
                 <div>
-                <h3>Please Login with   <button className='btn btn-secondary'  onClick={handleGoogleSignIn}>Google Account</button></h3>
+                <div className='my-3'>
+                <h3>Login with</h3>
+                <button className='btn btn-secondary'  onClick={handleGoogleSignIn}>Google Account</button>
               
                 </div>
                 <div>
-                    <h3>Please Login with   <button className='btn btn-secondary' onClick={handleGithubLogin} >Github Account</button></h3>
+                    <h3>Login with  </h3>
+                    <button className='btn btn-secondary' onClick={handleGithubLogin} >Github Account</button>
+                </div>
                 </div>
             </div>
             <div>

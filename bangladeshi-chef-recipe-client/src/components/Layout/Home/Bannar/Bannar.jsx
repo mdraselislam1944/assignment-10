@@ -8,7 +8,7 @@ import img3 from '../../../../assets/3.jpg';
 const Bannar = () => {
     return (
       <div className='row my-3'>
-        <div className='col-4  rounded  my-auto py-5'>
+        <div className='col-12 col-sm-4  rounded  my-auto py-5'>
           <div className='pt-5'>
           <h3 className='pt-5'>Food lover Bangladesh</h3>
           </div>
@@ -16,7 +16,7 @@ const Bannar = () => {
             <p className='pb-5'>It is a largest website of chef recipe in Bangladesh.Here you can see all chef and their recipes items.Also hired them to special cooking in your any celebrating ceremony and other culture</p>
           </div>
         </div>
-        <div className='col-8'>
+        <div className='col-12 col-sm-8'>
         <Carousel variant="dark">
       <Carousel.Item>
         <img className='w-100' style={{height:'34em' }}  src={img1} alt="" />

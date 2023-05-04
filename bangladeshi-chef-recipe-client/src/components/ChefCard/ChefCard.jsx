@@ -13,14 +13,14 @@ const ChefCard = (prob) => {
     //   console.log(typeof(i));
     // }
     return (
-      <div className='col-4 my-2'>
+      <div className='col-12 col-sm-4 my-2'>
         <Card style={{ width: '26rem'}}>
         <Card.Img style={{ width: '26rem',height:'20rem' }} variant="top" src={ChefPicture}/>
         <Card.Body>
           <Card.Title>{ChefName}</Card.Title>
           <Card.Text>
             <p>{YearsOfExperience}</p>
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex  justify-content-between align-items-center">
                 <p>Total recipes: {NumbersOfRecipes}</p>
                 <p><FaHandPointRight></FaHandPointRight> {Likes}</p>
             </div>
